@@ -17,6 +17,9 @@ public class SaldoEmisorRequest implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("enabled")
 	private java.lang.Boolean enabled;
 
+	@org.kie.api.definition.type.Label(value = "emailTo")
+	private java.lang.String emailTo;
+
 	public SaldoEmisorRequest() {
 	}
 
@@ -52,13 +55,22 @@ public class SaldoEmisorRequest implements java.io.Serializable {
 		this.enabled = enabled;
 	}
 
+	public java.lang.String getEmailTo() {
+		return this.emailTo;
+	}
+
+	public void setEmailTo(java.lang.String emailTo) {
+		this.emailTo = emailTo;
+	}
+
 	public SaldoEmisorRequest(java.lang.String workplacebankcode,
 			java.lang.Double saldo, java.lang.Double sobregiro,
-			java.lang.Boolean enabled) {
+			java.lang.Boolean enabled, java.lang.String emailTo) {
 		this.workplacebankcode = workplacebankcode;
 		this.saldo = saldo;
 		this.sobregiro = sobregiro;
 		this.enabled = enabled;
+		this.emailTo = emailTo;
 	}
 
 }
