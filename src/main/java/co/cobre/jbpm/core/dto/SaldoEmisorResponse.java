@@ -6,12 +6,73 @@ package co.cobre.jbpm.core.dto;
 
 public class SaldoEmisorResponse implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SaldoEmisorResponse() {
-    }
+	@org.kie.api.definition.type.Label(value = "resultCode")
+	private java.lang.String resultCode;
+	@org.kie.api.definition.type.Label(value = "resultMessage")
+	private java.lang.String resultMessage;
+	@org.kie.api.definition.type.Label(value = "requestData")
+	private co.cobre.jbpm.core.dto.SaldoEmisorRequest requestData;
+	@org.kie.api.definition.type.Label(value = "fechaActualizacion")
+	private java.util.Date fechaActualizacion;
+	@org.kie.api.definition.type.Label(value = "usuarioActualizacion")
+	private java.lang.String usuarioActualizacion;
 
+	public SaldoEmisorResponse() {
+	}
 
+	public java.lang.String getResultCode() {
+		return this.resultCode;
+	}
 
+	public void setResultCode(java.lang.String resultCode) {
+		this.resultCode = resultCode;
+	}
+
+	public java.lang.String getResultMessage() {
+		return this.resultMessage;
+	}
+
+	public void setResultMessage(java.lang.String resultMessage) {
+		this.resultMessage = resultMessage;
+	}
+
+	public co.cobre.jbpm.core.dto.SaldoEmisorRequest getRequestData() {
+		return this.requestData;
+	}
+
+	public void setRequestData(
+			co.cobre.jbpm.core.dto.SaldoEmisorRequest requestData) {
+		this.requestData = requestData;
+	}
+
+	public java.util.Date getFechaActualizacion() {
+		return this.fechaActualizacion;
+	}
+
+	public void setFechaActualizacion(java.util.Date fechaActualizacion) {
+		this.fechaActualizacion = fechaActualizacion;
+	}
+
+	public java.lang.String getUsuarioActualizacion() {
+		return this.usuarioActualizacion;
+	}
+
+	public void setUsuarioActualizacion(java.lang.String usuarioActualizacion) {
+		this.usuarioActualizacion = usuarioActualizacion;
+	}
+
+	public SaldoEmisorResponse(java.lang.String resultCode,
+			java.lang.String resultMessage,
+			co.cobre.jbpm.core.dto.SaldoEmisorRequest requestData,
+			java.util.Date fechaActualizacion,
+			java.lang.String usuarioActualizacion) {
+		this.resultCode = resultCode;
+		this.resultMessage = resultMessage;
+		this.requestData = requestData;
+		this.fechaActualizacion = fechaActualizacion;
+		this.usuarioActualizacion = usuarioActualizacion;
+	}
 
 }
