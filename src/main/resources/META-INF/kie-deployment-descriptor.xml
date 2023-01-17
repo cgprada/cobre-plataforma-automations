@@ -8,7 +8,20 @@
     <marshalling-strategies/>
     <event-listeners/>
     <task-event-listeners/>
-    <globals/>
+    <globals>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>"ENABLE_BALANCE"</identifier>
+            <parameters/>
+            <name>splitSegmentNameSaldoEmisor</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>"4b748510-517e-11ed-b687-4af6ba43cc77"</identifier>
+            <parameters/>
+            <name>splitEnvironmentId</name>
+        </global>
+    </globals>
     <work-item-handlers/>
     <environment-entries/>
     <configurations/>
