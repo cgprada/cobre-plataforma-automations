@@ -8,7 +8,7 @@ public class SaldoEmisorRequest implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("workPlaceBankCode")
+	@org.kie.api.definition.type.Label("workplacebankcode")
 	private java.lang.String workplacebankcode;
 	@org.kie.api.definition.type.Label("saldo")
 	private java.lang.Double saldo;
@@ -17,7 +17,7 @@ public class SaldoEmisorRequest implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("enabled")
 	private java.lang.Boolean enabled;
 
-	@org.kie.api.definition.type.Label(value = "emailTo")
+	@org.kie.api.definition.type.Label("emailTo")
 	private java.lang.String emailTo;
 
 	public SaldoEmisorRequest() {
